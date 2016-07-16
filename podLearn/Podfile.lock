@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (3.0.0)
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Starscream (1.0.1)
+  - SwiftyJSON (2.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - JSQMessagesViewController (from `https://github.com/jessesquires/JSQMessagesViewController.git`,
+    branch `develop`)
+  - Starscream (~> 1.0.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  JSQMessagesViewController:
+    :branch: develop
+    :git: https://github.com/jessesquires/JSQMessagesViewController.git
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  JSQMessagesViewController:
+    :commit: 49135c660a851d395ce851483b4b2ed2833af5e0
+    :git: https://github.com/jessesquires/JSQMessagesViewController.git
+  SwiftyJSON:
+    :commit: 3b5d0d4e0c19173b1bf0dc823bde25ad870f70c0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Starscream: 7b731637cd167ed5a059331f52c0254b1aa69095
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+
+COCOAPODS: 0.39.0

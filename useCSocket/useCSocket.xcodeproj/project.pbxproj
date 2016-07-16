@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE76B9D61B459574000637CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9D51B459574000637CB /* AppDelegate.swift */; };
+		BE76B9D81B459574000637CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9D71B459574000637CB /* ViewController.swift */; };
+		BE76B9DB1B459574000637CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9D91B459574000637CB /* Main.storyboard */; };
+		BE76B9DD1B459574000637CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9DC1B459574000637CB /* Assets.xcassets */; };
+		BE76B9E01B459574000637CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9DE1B459574000637CB /* LaunchScreen.storyboard */; };
+		BE76B9EB1B4597D4000637CB /* addTest.c in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9E91B4597D4000637CB /* addTest.c */; };
+		BE76B9EE1B4599A3000637CB /* socket-Client.c in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9EC1B4599A3000637CB /* socket-Client.c */; };
+		BE76B9F01B45A0CC000637CB /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9EF1B45A0CC000637CB /* Socket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE76B9D21B459574000637CB /* useCSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useCSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE76B9D51B459574000637CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE76B9D71B459574000637CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE76B9DA1B459574000637CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE76B9DC1B459574000637CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE76B9DF1B459574000637CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE76B9E11B459574000637CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE76B9E81B4597D4000637CB /* useCSocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "useCSocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE76B9E91B4597D4000637CB /* addTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = addTest.c; sourceTree = "<group>"; };
+		BE76B9EA1B4597D4000637CB /* addTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addTest.h; sourceTree = "<group>"; };
+		BE76B9EC1B4599A3000637CB /* socket-Client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "socket-Client.c"; sourceTree = "<group>"; };
+		BE76B9ED1B4599A3000637CB /* socket-Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "socket-Client.h"; sourceTree = "<group>"; };
+		BE76B9EF1B45A0CC000637CB /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE76B9CF1B459574000637CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE76B9C91B459574000637CB = {
+			isa = PBXGroup;
+			children = (
+				BE76B9D41B459574000637CB /* useCSocket */,
+				BE76B9D31B459574000637CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE76B9D31B459574000637CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE76B9D21B459574000637CB /* useCSocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE76B9D41B459574000637CB /* useCSocket */ = {
+			isa = PBXGroup;
+			children = (
+				BE76B9E71B45957F000637CB /* cScoket */,
+				BE76B9D51B459574000637CB /* AppDelegate.swift */,
+				BE76B9D71B459574000637CB /* ViewController.swift */,
+				BE76B9D91B459574000637CB /* Main.storyboard */,
+				BE76B9DC1B459574000637CB /* Assets.xcassets */,
+				BE76B9DE1B459574000637CB /* LaunchScreen.storyboard */,
+				BE76B9E11B459574000637CB /* Info.plist */,
+			);
+			path = useCSocket;
+			sourceTree = "<group>";
+		};
+		BE76B9E71B45957F000637CB /* cScoket */ = {
+			isa = PBXGroup;
+			children = (
+				BE76B9E91B4597D4000637CB /* addTest.c */,
+				BE76B9EA1B4597D4000637CB /* addTest.h */,
+				BE76B9E81B4597D4000637CB /* useCSocket-Bridging-Header.h */,
+				BE76B9EC1B4599A3000637CB /* socket-Client.c */,
+				BE76B9ED1B4599A3000637CB /* socket-Client.h */,
+				BE76B9EF1B45A0CC000637CB /* Socket.swift */,
+			);
+			name = cScoket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE76B9D11B459574000637CB /* useCSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE76B9E41B459574000637CB /* Build configuration list for PBXNativeTarget "useCSocket" */;
+			buildPhases = (
+				BE76B9CE1B459574000637CB /* Sources */,
+				BE76B9CF1B459574000637CB /* Frameworks */,
+				BE76B9D01B459574000637CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = useCSocket;
+			productName = useCSocket;
+			productReference = BE76B9D21B459574000637CB /* useCSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE76B9CA1B459574000637CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = D_ttang;
+				TargetAttributes = {
+					BE76B9D11B459574000637CB = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = BE76B9CD1B459574000637CB /* Build configuration list for PBXProject "useCSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE76B9C91B459574000637CB;
+			productRefGroup = BE76B9D31B459574000637CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE76B9D11B459574000637CB /* useCSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE76B9D01B459574000637CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE76B9E01B459574000637CB /* LaunchScreen.storyboard in Resources */,
+				BE76B9DD1B459574000637CB /* Assets.xcassets in Resources */,
+				BE76B9DB1B459574000637CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE76B9CE1B459574000637CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE76B9D81B459574000637CB /* ViewController.swift in Sources */,
+				BE76B9EE1B4599A3000637CB /* socket-Client.c in Sources */,
+				BE76B9F01B45A0CC000637CB /* Socket.swift in Sources */,
+				BE76B9D61B459574000637CB /* AppDelegate.swift in Sources */,
+				BE76B9EB1B4597D4000637CB /* addTest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE76B9D91B459574000637CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE76B9DA1B459574000637CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE76B9DE1B459574000637CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE76B9DF1B459574000637CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE76B9E21B459574000637CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE76B9E31B459574000637CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE76B9E51B459574000637CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = useCSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iweekapi.useCSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "useCSocket/useCSocket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE76B9E61B459574000637CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = useCSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iweekapi.useCSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "useCSocket/useCSocket-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE76B9CD1B459574000637CB /* Build configuration list for PBXProject "useCSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE76B9E21B459574000637CB /* Debug */,
+				BE76B9E31B459574000637CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE76B9E41B459574000637CB /* Build configuration list for PBXNativeTarget "useCSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE76B9E51B459574000637CB /* Debug */,
+				BE76B9E61B459574000637CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE76B9CA1B459574000637CB /* Project object */;
+}

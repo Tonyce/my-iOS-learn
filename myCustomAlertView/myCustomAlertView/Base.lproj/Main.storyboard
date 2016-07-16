@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myCustomAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3B-ab-iJE">
+                                <rect key="frame" x="239.5" y="20" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.33487081699999999" green="1" blue="0.75075491750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="showMyAlertView">
+                                    <color key="titleShadowColor" red="0.5" green="0.16220564840674356" blue="0.1925809807792972" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24l-KO-mBX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="g3B-ab-iJE" secondAttribute="centerX" id="00T-Zu-Kbi"/>
+                            <constraint firstItem="g3B-ab-iJE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7Lp-gC-7al"/>
+                            <constraint firstAttribute="centerX" secondItem="g3B-ab-iJE" secondAttribute="centerX" id="MrJ-1M-nQS"/>
+                            <constraint firstAttribute="centerX" secondItem="g3B-ab-iJE" secondAttribute="centerX" id="teW-jm-Qjg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MrJ-1M-nQS"/>
+                                <exclude reference="teW-jm-Qjg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAction" destination="g3B-ab-iJE" id="cON-KJ-d0x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

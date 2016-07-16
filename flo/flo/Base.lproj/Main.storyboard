@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="flo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="BackgroundView" customModule="flo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNE-MW-Ell" userLabel="Container View">
+                                <rect key="frame" x="150" y="50" width="300" height="300"/>
+                                <subviews>
+                                    <view alpha="0.70000000000000007" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZwJ-0S-I5S" customClass="CounterView" customModule="flo" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="35" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wX-hj-aSR">
+                                                <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-H6-oSP" customClass="GraphView" customModule="flo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.40047195897749799" green="1" blue="0.83368698623764281" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.16831297381376886" green="0.57441839238896275" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Iuu-Iu-IBj"/>
+                                    <constraint firstAttribute="height" constant="300" id="PR1-da-7qU"/>
+                                    <constraint firstAttribute="width" constant="300" id="fu9-GW-LRW"/>
+                                    <constraint firstAttribute="height" constant="300" id="qDO-Vf-vkk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fu9-GW-LRW"/>
+                                        <exclude reference="qDO-Vf-vkk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Y7V-48-pob" appends="YES" id="heF-LV-6Rc"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-A8-b0H" customClass="PushButtonView" customModule="flo" customModuleProvider="target">
+                                <rect key="frame" x="250" y="346" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="a3m-P6-kCA"/>
+                                    <constraint firstAttribute="height" constant="100" id="hiz-Mk-Nop"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.33487081699999999" green="1" blue="0.75075491750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6LY-xC-W8V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewc-kx-jHJ" customClass="PushButtonView" customModule="flo" customModuleProvider="target">
+                                <rect key="frame" x="275" y="480" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WRC-0n-mQJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="qfq-a2-y7K"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.67074140940000004" blue="0.3625897455" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rap-0P-qYx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="J0c-A8-b0H" secondAttribute="centerX" id="1MD-9l-b5p"/>
+                            <constraint firstAttribute="centerX" secondItem="sNE-MW-Ell" secondAttribute="centerX" id="4lp-91-LFR"/>
+                            <constraint firstAttribute="centerY" secondItem="sNE-MW-Ell" secondAttribute="centerY" constant="100" id="Ts1-qe-qXU"/>
+                            <constraint firstAttribute="centerX" secondItem="sNE-MW-Ell" secondAttribute="centerX" id="VG3-Qh-hnp"/>
+                            <constraint firstAttribute="centerY" secondItem="J0c-A8-b0H" secondAttribute="centerY" constant="-96" id="bUD-wT-ifT"/>
+                            <constraint firstAttribute="centerY" secondItem="sNE-MW-Ell" secondAttribute="centerY" id="qql-z1-ApT"/>
+                            <constraint firstAttribute="centerY" secondItem="ewc-kx-jHJ" secondAttribute="centerY" constant="-205" id="r3F-8D-Ush"/>
+                            <constraint firstAttribute="centerX" secondItem="ewc-kx-jHJ" secondAttribute="centerX" id="v8u-67-h5I"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
+                                <color key="value" red="0.61119987590000002" green="1" blue="0.54957893599999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="darkColor">
+                                <color key="value" red="0.5" green="0.16220564840000001" blue="0.1925809808" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="patternSize">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4lp-91-LFR"/>
+                                <exclude reference="qql-z1-ApT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="8wX-hj-aSR" id="VRh-d9-7Ju"/>
+                        <outlet property="counterView" destination="ZwJ-0S-I5S" id="vdT-bx-Sn9"/>
+                        <outlet property="graphView" destination="ff8-H6-oSP" id="WRS-B3-P4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Y7V-48-pob">
+                    <connections>
+                        <action selector="counterViewTap:" destination="vXZ-lx-hvc" id="cO7-Oh-cel"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="386" y="86"/>
+        </scene>
+    </scenes>
+</document>
